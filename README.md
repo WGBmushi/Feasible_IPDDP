@@ -1,7 +1,6 @@
 # Feasible_IPDDP
 Implementation of Interior Point Differential Dynamic Programming using SymEngine.
-
-
+The original MATLAB version is available at [ipddp](https://github.com/xapavlov/ipddp).
 
 ## Dependencies
 - SymEngine: Fast symbolic manipulation library to achieve automatic differentiation.
