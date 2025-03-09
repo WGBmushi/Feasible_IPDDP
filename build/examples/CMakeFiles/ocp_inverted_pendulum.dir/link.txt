@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/ocp_inverted_pendulum.dir/ocp_inverted_pendulum.cpp.o -o ocp_inverted_pendulum  -Wl,-rpath,/home/parallels/Academic/Arsenal/DDP/IPDDP_SymEngine_Series/Feasible_IPDDP/build ../libipddp.so /usr/local/lib/libsymengine.a /usr/lib/aarch64-linux-gnu/libgmp.so /usr/lib/aarch64-linux-gnu/libpython3.10.so 
