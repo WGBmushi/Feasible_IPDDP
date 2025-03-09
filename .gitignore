@@ -32,6 +32,6 @@
 *.app
 
 # Files do not need to be uploaded
-/bulid
+/build
 # /.vscode
 
