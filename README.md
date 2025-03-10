@@ -16,6 +16,7 @@ make -j4
 ```
 
 ## Results
+![convergence_process](results/convergence_process.png)
 ![phase_trajectory](results/phase_trajectory.png)
 ![control_input](results/control_input.png)
 ![cost](results/cost.png)
