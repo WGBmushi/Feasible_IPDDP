@@ -52,7 +52,7 @@ BackwardPass backwardpass(const Functions &funcs, ForwardPass &fp, BackwardPass 
     Eigen::MatrixXd Vx_1;
     Eigen::MatrixXd Vxx_1;
 
-    Eigen::VectorXd x_terminal = fp.x.col(N); // 个数上是第N+1个，C++是0为起始序号，所以编程是N
+    Eigen::VectorXd x_terminal = fp.x.col(N); 
     Eigen::VectorXd u_terminal = fp.u.col(N - 1);
 
     V = replaceAndEvaluate(x_terminal, u_terminal, funcs.x, funcs.u, funcs.p);
