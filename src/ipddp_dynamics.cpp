@@ -44,7 +44,6 @@ void dynamics(const IPDDP_OCP &ocp, Functions &funcs, ForwardPass &fp, BackwardP
             funcs.fuu = std::vector<SymEngine::DenseMatrix>(dim_u);
             HessianTensor(funcs.fu, u, funcs.fuu);
 
-            // -------------------------------------------------------------
             funcs.q = SymEngine::DenseMatrix(1, 1);
             funcs.q = q;
 
@@ -67,7 +66,6 @@ void dynamics(const IPDDP_OCP &ocp, Functions &funcs, ForwardPass &fp, BackwardP
             funcs.quu = SymEngine::DenseMatrix(dim_u, dim_u);
             jacobian(funcs.qu, u, funcs.quu);
 
-            // ---------------------------------------------------------
             funcs.p = SymEngine::DenseMatrix(1, 1);
             funcs.p = p;
 
@@ -117,7 +115,6 @@ void dynamics(const IPDDP_OCP &ocp, Functions &funcs, ForwardPass &fp, BackwardP
 
 #pragma omp section
         {
-            // ---------------------------------------------------------
             fp.horizon = N;
 
             if (alg.ws)
@@ -155,7 +152,6 @@ void dynamics(const IPDDP_OCP &ocp, Functions &funcs, ForwardPass &fp, BackwardP
 
 #pragma omp section
         {
-            // ---------------------------------------------------------
             bp.ku = Eigen::MatrixXd::Zero(dim_u, N);
             bp.Ku.resize(N, Eigen::MatrixXd::Zero(dim_u, dim_x));
             bp.ky = Eigen::MatrixXd::Zero(dim_c, N);
